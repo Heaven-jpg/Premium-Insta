@@ -24,13 +24,15 @@ body, html {
     overflow: hidden;
 }
 
-.video-portal iframe {
+.video-portal video {
     width: 100%;
-    height: 115%; /* Stretches the frame slightly past the bottom to hide likes/comments */
+    height: 100%;
+    object-fit: cover;
     position: absolute;
-    top: -5%; /* Shifts it slightly up to mask the profile avatar header */
-    pointer-events: none; /* Disables double tapping inside Instagram */
+    top: 0;
+    left: 0;
 }
+
 
 /* Translucent intercept layer for phone touches */
 #gesture-layer {
