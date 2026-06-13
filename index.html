@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>The Window</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="video-portal" id="portal-tap-zone">
+        <video autoplay loop muted playsinline class="bg-video active" id="video-a">
+            <source src="https://player.vimeo.com/external/371433846.hd.mp4?s=236da2f3c054f1182deab134e6b22ebffb06e6bf&profile_id=174&oauth2_token_id=57447761" type="video/mp4">
+        </video>
+    </div>
+
+    <div id="gesture-layer"></div>
+
+    <div id="mobile-ui" class="visible">
+        <div class="bottom-sheet">
+            <div class="handle"></div>
+            <div class="sheet-content">
+                <h3>Atmosphere Deck</h3>
+                <p class="subtitle">Tap the top half of the screen to hide this menu and lock into the space.</p>
+                
+                <div class="scene-section">
+                    <span class="section-label">Portal Status</span>
+                    <div class="scene-grid">
+                        <button class="scene-btn active">Portal Online</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
